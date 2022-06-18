@@ -18,10 +18,6 @@ import {
 } from "./error";
 import { SyntaxParamsRegex } from "./params";
 
-/*
-  TODO: Add a way for developers to have custom arguments, based on the command name. ( Ex: CommandHandler.register('setadmin %u %d %s') )
-  TODO: Incorporate syntax validation that goes something like this: %u<You must specify a valid user>, where the text between the <> is the error message returned by the handler.
-*/
 export class CommandHandler {
   private commandsMap: Map<string, Command>;
 
