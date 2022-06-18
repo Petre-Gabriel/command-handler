@@ -8,8 +8,8 @@ export class User {
   flags: CommandFlag[];
 
   constructor() {
-    this.name = "John Doe";
-    this.flags = [];
+    this.name = "JohnDoe";
+    this.flags = ["LOGGED_IN", "ADMIN"];
   }
 
   addFlags(flagsToBeAdded: string | string[]) {
@@ -26,5 +26,10 @@ export class User {
       this.flags = this.flags.filter(
         (flag: string) => !flagsToBeRemoved.includes(flag)
       );
+  }
+
+  // Dummy implementation to check if a user is online
+  static isUserOnline(userName: string): boolean {
+    return userName === "JohnDoe";
   }
 }
