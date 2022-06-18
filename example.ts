@@ -1,6 +1,4 @@
 import { CommandHandler } from "./src";
-import { HandlerError } from "./src/lib/error";
-import { User } from "./src/placeholders/user";
 
 /*
 Here is an example of how to use the handler.
